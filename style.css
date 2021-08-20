@@ -1,0 +1,33 @@
+.container{
+    margin-top: 70px;
+}
+
+/* button style hover part */
+
+.button-style {
+    margin-top: 36px;
+    margin-bottom: 23px;
+
+}
+
+.button-hover-style {
+
+    margin: 4px;
+    padding: 5px;
+
+}
+
+.button-hover-style:hover {
+
+    background-color: black;
+    color: white;
+    border: 5px solid gray;
+    border-radius: 3px;
+
+}
+   
+
+
+   .price-checkout {
+       margin-top: 50px;
+   }
