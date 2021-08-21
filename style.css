@@ -1,8 +1,9 @@
+
 .container{
     margin-top: 70px;
 }
 
-/* button style hover part */
+/* button style part */
 
 .button-style {
     margin-top: 36px;
@@ -10,24 +11,27 @@
 
 }
 
+/* button hover style  part */
+
 .button-hover-style {
 
     margin: 4px;
     padding: 5px;
+    border: 5px solid gray;
 
 }
+
+/* button style hover part */
 
 .button-hover-style:hover {
 
     background-color: black;
     color: white;
-    border: 5px solid gray;
     border-radius: 3px;
 
 }
    
-
-
+ /* price-checkout part */
    .price-checkout {
        margin-top: 50px;
    }
