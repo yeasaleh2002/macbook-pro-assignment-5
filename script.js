@@ -83,7 +83,7 @@ chargableDelivery.addEventListener('click', function(){
 const total = document.getElementById('total-price');
 
 // final price function
-const finalPrice = document.getElementById('final-price');
+ const finalPrice = document.getElementById('final-price');
 
 function updateTotal() {
     const bestPriceCharge = parseInt(bestPrice.innerText);
@@ -95,18 +95,17 @@ function updateTotal() {
     total.innerText = grandTotal;
 
     // final price function
-    finalPrice.innerText = grandTotal;  
+     finalPrice.innerText = grandTotal;  
 }
 // total part  end
 
 
 
-//discount calculation
+//discount calculation part start 
 
-const input = document.getElementById('promo-input');
-const apply = document.getElementById('apply-button');
 
 document.getElementById('apply-button').addEventListener('click', function(){
+   
     const input = document.getElementById('promo-input');
     const inputText = input.value;
 
@@ -114,7 +113,10 @@ document.getElementById('apply-button').addEventListener('click', function(){
     const totalPriceText = totalPrice.innerText;
 
     const finalPrice = document.getElementById('final-price');
-    if(input == "stevekaku") {
+    if(inputText == "stevekaku") {
         finalPrice.innerText = totalPriceText - (totalPriceText * .2);
     }
+    input.value = "";
 }) 
+
+//discount calculation part end
