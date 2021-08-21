@@ -37,8 +37,8 @@
      <div class="button-style" >
         <h3>Memory</h3>
          <div>
-            <button class="button-hover-style rounded-2 me-2 ">8GB unified memory</button>
-            <button class="button-hover-style rounded-2">16GB unified memory</button>    
+            <button id="eight-gb-memory" class="button-hover-style rounded-2 me-2 ">8GB unified memory</button>
+            <button id="sixteen-gb-memory" class="button-hover-style rounded-2">16GB unified memory</button>    
          </div>
      </div>
 
@@ -46,9 +46,9 @@
     <div class="button-style" >
         <h3>Storage</h3>
         <div>
-            <button class="button-hover-style rounded-2 me-2">256GB SSD storage</button>
-            <button class="button-hover-style rounded-2 me-2">512GB SSD storage</button>
-            <button class="button-hover-style rounded-2">1TB SSD storage</button>
+            <button id="twoHundradFifttySix-gb-stroage" class="button-hover-style rounded-2 me-2">256GB SSD storage</button>
+            <button id="fiveHundradtwelve-gb-stroage" class="button-hover-style rounded-2 me-2">512GB SSD storage</button>
+            <button id="one-tb-stroage" class="button-hover-style rounded-2">1TB SSD storage</button>
         </div>
     </div>
 
@@ -56,34 +56,41 @@
     <div class="button-style" >
         <h3>Choose your delivery option</h3>
         <div>
-            <button class="button-hover-style rounded-2 me-2">Friday, Aug 25 FREE Prime Delivery</button>
-            <button class="button-hover-style rounded-2">Monday, Aug 21 Delivery charge $20</button>
+            <button id="free-delivery" class="button-hover-style rounded-2 me-2">Friday, Aug 25 FREE Prime Delivery</button>
+            <button id="chargable-delivery" class="button-hover-style rounded-2">Monday, Aug 21 Delivery charge $20</button>
         </div>
     </div>
 </div>
 
 
   <!-- price checkout part -->
-<div class="price-checkout">
-<div class="row">
 
- <div class="col-md-8">
-  <h3>Best Price</h3> <hr>
-  <h3>Extra Memory Cost</h3> <hr> 
-  <h3>Extra Storage Cost</h3> <hr>
-  <h3>Delivery charge</h3> <hr>
-  <h3>Total Price</h3>
+ <div class="d-flex justify-content-between mt-5 border-bottom w-75">
+    <h3>Best Price</h3> 
+    <h3>$<span id="best-price">1299</span> </h3> 
  </div>
 
- <div class="col-md-4 status">
-    <h3>$<span id="sub-total">1299</span></h3> <hr>
-    <h3>$<span id="extra-memory">0</span></h3> <hr>
-    <h3>$<span id="extra-storage">0</span></h3> <hr>
-    <h3>$<span id="delivery-charge">0</span></h3> <hr>
-    <h3>$<span id="total-price">1299</span></h3>
+ <div class="d-flex justify-content-between mt-5 border-bottom w-75">
+    <h3>Extra Memory Cost</h3>
+    <h3>$<span id="extra-memory">0</span></h3>
+
  </div>
-</div>
-</div>
+
+ <div class="d-flex justify-content-between mt-5 border-bottom w-75">
+    <h3>Extra Storage Cost</h3>
+    <h3>$<span id="extra-storage">0</span></h3> 
+ </div>
+
+ <div class="d-flex justify-content-between mt-5 border-bottom w-75">
+    <h3>Delivery charge</h3>
+    <h3>$<span id="delivery-charge">0</span></h3>
+ </div>
+
+ <div class="d-flex justify-content-between mt-5 w-75">
+ <h3>Total Price</h3>
+ <h3>$<span id="total-price">1299</span></h3>
+ </div>
+
 
 </div>
 
@@ -94,5 +101,6 @@
     
 </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
